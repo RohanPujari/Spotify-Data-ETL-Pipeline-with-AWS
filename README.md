@@ -14,24 +14,24 @@ This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline 
 
   - AWS S3: Two buckets - 'staging' for raw data and 'datawarehouse' for processed data.
 
-  - AWS IAM: User and role creation with specific policies for Glue operations
+  - AWS IAM: User and role creation with specific policies for Glue operations.
 
-  - AWS Glue: ETL job for data transformation
+  - AWS Glue: ETL job for data transformation.
 
-  - AWS Glue Crawler: For schema inference and table creation
+  - AWS Glue Crawler: For schema inference and table creation.
 
-  - AWS Athena: For querying transformed data
+  - AWS Athena: For querying transformed data.
 
-  - Amazon QuickSight: For data visualization
+  - Amazon QuickSight: For data visualization.
 
 ## Workflow:
 
 1) Data Ingestion:
-    - Downloaded Spotify dataset from Kaggle
-    - Uploaded data to the 'staging' S3 bucket
+    - Downloaded Spotify dataset from Kaggle.
+    - Uploaded data to the 'staging' S3 bucket.
 2) IAM Setup:
-    - Created an IAM user with specific access permissions
-    - Set up an IAM role with necessary policies for Glue operations
+    - Created an IAM user with specific access permissions.
+    - Set up an IAM role with necessary policies for Glue operations.
 3) ETL Process:
 Developed a Glue ETL job to:
     - Extract data from the staging bucket.
