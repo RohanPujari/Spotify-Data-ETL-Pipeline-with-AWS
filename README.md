@@ -1,13 +1,14 @@
 # Spotify-Data-ETL-Pipeline-with-AWS
 
-Project Overview
+## Project Overview:
+
 This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline for Spotify data using various AWS services. The pipeline extracts data from Kaggle, processes it using AWS Glue, and makes it available for analysis through AWS Athena and visualization with Amazon QuickSight.
 
-Architecture:
+## Architecture:
 
 ![image](https://github.com/user-attachments/assets/9e508014-3206-4446-a5a6-51068d5a3651)
 
-Components:
+## Components:
 
   - Data Source: Kaggle dataset containing Spotify data (artists, tracks, albums).
 
@@ -23,7 +24,7 @@ Components:
 
   - Amazon QuickSight: For data visualization
 
-Workflow:
+## Workflow:
 
 1) Data Ingestion:
     - Downloaded Spotify dataset from Kaggle
@@ -37,7 +38,7 @@ Developed a Glue ETL job to:
     - Join and transform datasets.
     - Remove unnecessary columns.
     - Load transformed data into the 'datawarehouse' bucket as Parquet files.
-4)Data Cataloging:
+4) Data Cataloging:
     - Used Glue Crawler to automatically infer schema and create table definitions.
     - Created a dedicated database to house the transformed data tables.
 5) Data Analysis:
@@ -47,5 +48,5 @@ Developed a Glue ETL job to:
 6) Data Visualization:
     - Integrated Amazon QuickSight to create interactive dashboards.
 
-Difficulties Faced:
+## Difficulties Faced:
    - Errors caused due to incomplete policies given.
